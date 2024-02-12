@@ -1,6 +1,20 @@
 {
+  "name": "Loco-Logo",
+  "version": "1.0.0",
+  "description": "A simple logo maker to use on in house projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "build": "babel src -d dist"
+  },
+  "keywords": [],
+  "author": "Noah Fleetwood",
   "dependencies": {
     "inquirer": "^9.2.14",
     "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
