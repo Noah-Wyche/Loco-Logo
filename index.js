@@ -1,12 +1,12 @@
 // Import necessary modules
-const inquirer = require('inquirer');
-const { generateSVG } = require('./lib/svgGenerator');
-const { saveToFile } = require('./lib/fileWriter');
-const { collectUserInput } = require('./lib/userInput');
-
-// Main function to run the application
 async function run() {
     try {
+        // Import necessary modules
+        const { default: inquirer } = await import('inquirer');
+        const { generateSVG } = require('./lib/svgGenerator');
+        const { saveToFile } = require('./lib/fileWriter');
+        const { collectUserInput } = require('./lib/userInput');
+
         // Collect user input
         const userInput = await collectUserInput();
 
